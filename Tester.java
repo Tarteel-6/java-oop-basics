@@ -29,6 +29,16 @@ public class Tester {
         Li.turnOn();
         Li.turnOff();
 
+        Classroom classroom1 = new Classroom();
+        classroom1.students = new String[]{"Alice", "Bob", "Charlie"};
+        classroom1.printAllStudents();
+
+        Counter counter1 = new Counter();
+        counter1.increase();
+        counter1.increase();
+        counter1.decrease();
+        counter1.printCount();
+
 
 
 
