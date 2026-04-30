@@ -1,11 +1,20 @@
 public class Circle {
-    public double radius;
-     public double TheFinalValue(){
-         double res = Math.PI*radius*radius;
+    private double radius;
+
+    public void setRadius(double radius){
+        this.radius = radius;
+     }
+     public double getRadius(){
+        return radius;
+     }
+
+    public double TheFinalValue(){
+        double res = Math.PI * getRadius()*getRadius();
         return res;
-     }
-     public String ToString(){
-         return "the area " + TheFinalValue();
-     }
+    }
+
+    public String toString(){
+        return "the area " + TheFinalValue();
+    }
 
 }

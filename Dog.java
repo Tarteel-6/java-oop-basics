@@ -1,7 +1,22 @@
 public class Dog {
-    public String name;
-    public int age;
-    public void ShowInfo(){
-        System.out.println("Name: "+ name + ", Age: "+ age);
+    private String name;
+    private int age;
+    public void setName(String name){
+        this.name = name;
+
+    }
+    public String getName(){
+        return name;
+
+    }
+    public void setAge(int age){
+        this.age = age;
+
+    }
+    public int getAge(){
+        return age;
+    }
+    public String toString(){
+        return "The name of the Dog is " + getName() + ", and the Age is "+ getAge();
     }
 }

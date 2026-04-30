@@ -1,16 +1,22 @@
 public class Counter {
-    int count;
+    private int  count;
+     public void setCount(int count ){
+         this.count = count;
+     }
+     public int getCount(){
+         return count;
+     }
 
-    void increase() {
+    public void increase() {
         count++;
     }
 
-    void decrease() {
+    public  void decrease() {
         count--;
     }
 
-    void printCount() {
-        System.out.println("Count: " + count);
+    public String toString(){
+         return "The count is " + getCount();
     }
 }
 

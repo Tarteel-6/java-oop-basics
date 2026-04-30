@@ -1,6 +1,18 @@
 public class BankAccount {
-    public String owner;
-    public int Balance;
+    private String owner;
+    private int Balance;
+    public void setOwner(String Owner){
+        this.owner = owner;
+    }
+    public String getOwner(){
+        return owner;
+    }
+    public void setBalance(int Balance){
+        this.Balance = Balance;
+    }
+    public int getBalance(){
+        return Balance;
+    }
     public int Deposite(int amount ) {
         Balance += amount;
         return Balance;
@@ -13,8 +25,5 @@ public class BankAccount {
 
         }
         public String toString(){
-        return "Owner is " + owner + ", the balance is "+ Balance;
-        }
-
-
-}
+        return "Owner is " + getOwner() + ", the balance is "+ getBalance();
+        }}

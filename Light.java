@@ -1,13 +1,22 @@
 public class Light {
-    public boolean isOn;
+    private boolean isOn;
+    public void setIsOn(boolean isOn){
+        this.isOn = isOn;
+    }
+    public boolean getIsOn(){
+        return isOn;
+    }
      void turnOn(){
          isOn = true;
-         System.out.println("The Lite is On !");
+
 
     }
     void turnOff(){
          isOn = false;
-         System.out.println("The Lite is Off");
+
+    }
+    public String toString(){
+        return "The Light is " + getIsOn();
     }
 
 }
